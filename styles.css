@@ -50,39 +50,52 @@ nav a:hover {
     color: #333;
 }
 
-/* Main content area */
-main {
+/* Profile section */
+.profile {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-grow: 1;
-    text-align: center;
+    justify-content: center;
+    background-color: #fff;
     padding: 30px;
-}
-
-main section {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     max-width: 800px;
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    opacity: 0.95;
+    margin: 30px;
+    text-align: left;
 }
 
-/* 標題 */
-h2 {
-    font-size: 1.8em;
+.profile-image {
+    flex: 1;
+    text-align: center;
+}
+
+.image-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #fbe4e6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #555;
-    margin-bottom: 15px;
+    font-size: 1.2em;
 }
 
-/* 文字段落 */
-p {
+.profile-info {
+    flex: 2;
+    padding: 20px;
+}
+
+.profile-info h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
     font-size: 1.1em;
     line-height: 1.6;
     color: #666;
-    margin-bottom: 20px;
 }
 
 /* Footer */
@@ -94,19 +107,4 @@ footer {
     font-size: 0.9em;
     color: #333;
     box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Button style in the navigation */
-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #fbe4e6;
-    color: #333;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background-color: #fef8dd;
 }
