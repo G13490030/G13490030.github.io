@@ -1,124 +1,87 @@
-/* 設定網頁整體背景及字體樣式 */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f3f4f6;
-    color: #333;
-    line-height: 1.6;
+    box-sizing: border-box;
 }
 
-/* 頁眉設計 */
+/* 背景和字體樣式 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #dbe9f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* 頁首樣式 */
 header {
-    background: linear-gradient(135deg, #3b5998, #4b70dd);
-    color: #fff;
-    padding: 2rem;
+    background-color: #fef8dd;
+    width: 100%;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    font-weight: bold;
-    letter-spacing: 1px;
+    font-size: 2em;
+    color: #333;
 }
 
-/* 導覽列設計 */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0 0;
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #555;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #333;
+}
+
+/* 主要內容區 */
+main {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 5px;
-}
-
-nav ul li a:hover {
-    background-color: #fff;
-    color: #3b5998;
-}
-
-/* 主要內容區域設計 */
-main {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #3b5998;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    position: relative;
-}
-
-h2::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 4px;
-    background: #4b70dd;
-    margin-top: 0.5rem;
-}
-
-p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
-}
-
-/* Footer設計 */
-footer {
+    align-items: center;
+    flex-grow: 1;
     text-align: center;
-    padding: 1.5rem;
-    background: #3b5998;
-    color: #fff;
-    font-size: 0.9rem;
+    padding: 20px;
 }
 
-/* 按鈕樣式（如有需要） */
-button {
-    background: linear-gradient(135deg, #4b70dd, #3b5998);
-    color: #fff;
-    border: none;
-    padding: 0.75rem 1.5rem;
+main section {
+    max-width: 800px;
+    background-color: #fff;
+    padding: 30px;
     border-radius: 8px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-button:hover {
-    background: #3b5998;
+/* 標題樣式 */
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #555;
 }
 
-/* 響應式設計 */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-    
-    main {
-        padding: 1.5rem;
-    }
+/* 文字段落樣式 */
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+}
 
-    nav ul {
-        flex-direction: column;
-        gap: 1rem;
-    }
+/* 頁尾樣式 */
+footer {
+    width: 100%;
+    background-color: #fbe4e6;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    color: #333;
 }
